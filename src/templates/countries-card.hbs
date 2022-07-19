@@ -1,0 +1,17 @@
+<div class="country-symbols">
+  <img class="country-flag" src= {{flags.svg}} alt="country-flag" width="60" height="50"/>
+  <h1 class="country-name"><b>{{name.official}}</b></h1>
+</div>
+<ul class="country-list">
+  <li class="country-list__item"><b>Capital: </b>{{capital}}</li>
+  <li class="country-list__item"><b>Population: </b>{{population}}</li>
+  <li class="country-list__item"><b>Languages: </b>{{languages}}</li>
+</ul> 
+
+{{!-- АЛЬТЕРНАТИВНЕ РІШЕННЯ ПРОБЛЕМИ languages = [object Object] --}}
+
+ {{!-- <li class="country-list__item">Languages:{{#each languages}}
+    {{#if @index includeZero=false}} , {{/if}}
+    {{this}}
+    {{/each}}
+  </li> --}}
